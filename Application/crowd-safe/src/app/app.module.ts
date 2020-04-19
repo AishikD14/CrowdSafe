@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
 import { RegisterComponent } from './register/register.component';;
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { MenuComponent } from './menu/menu.component'
+// import { MenuComponent } from './menu/menu.component'
 import * as FusionCharts from 'fusioncharts';
 import { FusionChartsModule } from 'angular-fusioncharts';
 import * as FusionMaps from "fusionmaps/fusioncharts.maps";
@@ -24,7 +24,7 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, India, FusionTheme);
 
 
 @NgModule({
-  declarations: [AppComponent, RegisterComponent, MenuComponent, HeaderComponent, FooterComponent],
+  declarations: [AppComponent, RegisterComponent, HeaderComponent, FooterComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgxLoadingModule.forRoot({}), HttpClientModule, CommonModule,
     BrowserModule,
